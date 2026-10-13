@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for the SDK Infinity Technologies employee application, issued under the Digital Personal Data Protection Act, 2023.">
+<meta name="robots" content="index, follow">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%23121A2C'/><path d='M50 22a14 14 0 0 0-14 14v8h-4a4 4 0 0 0-4 4v26a4 4 0 0 0 4 4h36a4 4 0 0 0 4-4V48a4 4 0 0 0-4-4h-4v-8a14 14 0 0 0-14-14zm0 8a6 6 0 0 1 6 6v8H44v-8a6 6 0 0 1 6-6z' fill='%23D6A74D'/></svg>">
+<title>SDK Infinity Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+
+<style>
+  /* ---- Tokens: light is the base, both themes redefined below ---------- */
+  :root {
+    --ground:    #FCFCFD;
+    --surface:   #FFFFFF;
+    --raised:    #F4F6FA;
+    --ink:       #151B28;
+    --ink-soft:  #333C4F;
+    --muted:     #5B6578;
+    --faint:     #8A93A5;
+    --hairline:  #E3E7EF;
+    --rule:      #CED5E2;
+    --navy:      #121A2C;
+    --accent:    #B8862F;   /* gold, darkened for contrast on a light ground */
+    --accent-dim:#F0E4CB;
+    --flag:      #9A3B2E;
+    --flag-bg:   #FBEDEA;
+    --ok:        #2F6B4F;
+    --ok-bg:     #E9F3ED;
+
+    --measure: 68ch;
+    --step--1: clamp(.80rem, .78rem + .1vw, .86rem);
+    --step-0:  clamp(1rem, .97rem + .14vw, 1.075rem);
+    --step-1:  clamp(1.15rem, 1.1rem + .25vw, 1.3rem);
+    --step-2:  clamp(1.4rem, 1.3rem + .5vw, 1.75rem);
+    --step-3:  clamp(1.9rem, 1.6rem + 1.4vw, 2.9rem);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:    #0D1322;
+      --surface:   #141C2E;
+      --raised:    #1B2438;
+      --ink:       #E6EAF3;
+      --ink-soft:  #C6CEDD;
+      --muted:     #97A1B5;
+      --faint:     #6E798E;
+      --hairline:  #263046;
+      --rule:      #33405A;
+      --navy:      #E6EAF3;
+      --accent:    #D6A74D;
+      --accent-dim:#2A2416;
+      --flag:      #E5897A;
+      --flag-bg:   #2C1A17;
+      --ok:        #7FC3A0;
+      --ok-bg:     #142620;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground:    #0D1322;
+    --surface:   #141C2E;
+    --raised:    #1B2438;
+    --ink:       #E6EAF3;
+    --ink-soft:  #C6CEDD;
+    --muted:     #97A1B5;
+    --faint:     #6E798E;
+    --hairline:  #263046;
+    --rule:      #33405A;
+    --navy:      #E6EAF3;
+    --accent:    #D6A74D;
+    --accent-dim:#2A2416;
+    --flag:      #E5897A;
+    --flag-bg:   #2C1A17;
+    --ok:        #7FC3A0;
+    --ok-bg:     #142620;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink-soft);
+    font-family: Spectral, Georgia, "Times New Roman", serif;
+    font-size: var(--step-0);
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---- Masthead -------------------------------------------------------- */
+  .masthead {
+    background: var(--navy);
+    color: #E6EAF3;
+    padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.25rem, 5vw, 3rem) clamp(2rem, 4vw, 3rem);
+    border-bottom: 3px solid var(--accent);
+  }
+  :root[data-theme="dark"] .masthead,
+  :root:not([data-theme="light"]) .masthead { background: #080D18; }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) .masthead { background: #121A2C; }
+  }
+  .masthead-inner { max-width: 72rem; margin: 0 auto; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: var(--step--1);
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #D6A74D;
+    margin: 0 0 1rem;
+  }
+  .masthead h1 {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: var(--step-3);
+    line-height: 1.08;
+    letter-spacing: -.02em;
+    text-wrap: balance;
+    margin: 0 0 .75rem;
+    color: #FFFFFF;
+  }
+  .masthead p {
+    max-width: 54ch;
+    margin: 0;
+    color: #AFB9CC;
+    font-size: var(--step-1);
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 1.25rem 2rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(214,167,77,.28);
+  }
+  .fact dt {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .72rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #8A96AD;
+    margin-bottom: .35rem;
+  }
+  .fact dd {
+    margin: 0;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: .94rem;
+    color: #E6EAF3;
+    line-height: 1.5;
+  }
+
+  /* ---- Shell ----------------------------------------------------------- */
+  .shell {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: clamp(2rem, 5vw, 3.5rem) clamp(1.25rem, 5vw, 3rem) 5rem;
+    display: grid;
+    gap: clamp(2rem, 5vw, 3.5rem);
+  }
+  @media (min-width: 60rem) {
+    .shell { grid-template-columns: 15rem minmax(0, 1fr); align-items: start; }
+  }
+
+  /* ---- Index ----------------------------------------------------------- */
+  .index { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+  @media (min-width: 60rem) {
+    .index { position: sticky; top: 1.5rem; max-height: calc(100vh - 3rem); overflow-y: auto; }
+  }
+  .index h2 {
+    font-size: .72rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 .9rem;
+    font-weight: 600;
+  }
+  .index ol { list-style: none; margin: 0; padding: 0; counter-reset: idx; }
+  .index li { counter-increment: idx; }
+  .index a {
+    display: grid;
+    grid-template-columns: 1.6rem 1fr;
+    gap: .4rem;
+    padding: .3rem 0;
+    font-size: .845rem;
+    line-height: 1.4;
+    color: var(--muted);
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  .index a::before {
+    content: counter(idx);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .74rem;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+  }
+  .index a:hover, .index a:focus-visible { color: var(--accent); }
+  .index a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---- Document -------------------------------------------------------- */
+  .doc { min-width: 0; }
+  .doc > * { max-width: var(--measure); }
+  .doc > .wide { max-width: none; }
+
+  section { counter-increment: sec; margin-bottom: clamp(2.5rem, 5vw, 3.75rem); scroll-margin-top: 1.5rem; }
+  .doc { counter-reset: sec; }
+
+  h2.sec {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: var(--step-2);
+    line-height: 1.2;
+    letter-spacing: -.015em;
+    color: var(--ink);
+    text-wrap: balance;
+    margin: 0 0 1.1rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: .75rem;
+    align-items: baseline;
+  }
+  /* Numbering is not decoration here: a privacy policy is cited by section,
+     and the grievance process below refers to these numbers. */
+  h2.sec::before {
+    content: counter(sec);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: .06em;
+    font-variant-numeric: tabular-nums;
+  }
+  h3 {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: var(--step-1);
+    color: var(--ink);
+    margin: 2rem 0 .6rem;
+    text-wrap: balance;
+  }
+  h4 {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: var(--step-0);
+    color: var(--ink);
+    margin: 1.4rem 0 .4rem;
+  }
+  p { margin: 0 0 1.1rem; }
+  ul, ol { margin: 0 0 1.1rem; padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  li::marker { color: var(--accent); }
+  strong { color: var(--ink); font-weight: 600; }
+  em { font-style: italic; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  code {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: .86em;
+    background: var(--raised);
+    border: 1px solid var(--hairline);
+    border-radius: 3px;
+    padding: .08em .35em;
+    color: var(--ink);
+  }
+
+  .lede {
+    font-size: var(--step-1);
+    line-height: 1.6;
+    color: var(--ink);
+  }
+
+  /* ---- Callouts -------------------------------------------------------- */
+  .note {
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    padding: 1rem 1.25rem;
+    margin: 0 0 1.5rem;
+    border-radius: 0 4px 4px 0;
+  }
+  .note.flag { border-left-color: var(--flag); background: var(--flag-bg); }
+  .note p:last-child { margin-bottom: 0; }
+  .note-title {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 .45rem;
+  }
+  .note.flag .note-title { color: var(--flag); }
+
+  /* ---- Tables ---------------------------------------------------------- */
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--hairline);
+    border-radius: 5px;
+    background: var(--surface);
+    margin: 0 0 1.5rem;
+  }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td {
+    text-align: left;
+    padding: .7rem .9rem;
+    border-bottom: 1px solid var(--hairline);
+    vertical-align: top;
+  }
+  thead th {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    background: var(--raised);
+    white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  td:first-child {
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-weight: 500;
+    color: var(--ink);
+    white-space: nowrap;
+  }
+  .pill {
+    display: inline-block;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    padding: .14em .5em;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .pill.yes { background: var(--accent-dim); color: var(--accent); }
+  .pill.no  { background: var(--ok-bg); color: var(--ok); }
+
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 5px;
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 1.25rem;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: .92rem;
+    line-height: 1.65;
+  }
+  .contact .who { font-weight: 600; color: var(--ink); display: block; margin-bottom: .35rem; }
+
+  footer.colophon {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: .85rem;
+    color: var(--muted);
+    max-width: var(--measure);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+  html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="eyebrow">Privacy Policy · Mobile Application</p>
+    <h1>SDK Infinity Technologies</h1>
+    <p>How the SDK Infinity employee application collects, uses, stores and protects personal data, issued under the Digital Personal Data Protection Act, 2023.</p>
+    <dl class="facts">
+      <div class="fact"><dt>Application</dt><dd>SDK Infinity Technologies — employee ERP application (Android &amp; iOS)</dd></div>
+      <div class="fact"><dt>Data Fiduciary</dt><dd>SDK Infinity Technologies</dd></div>
+      <div class="fact"><dt>Contact</dt><dd>goalsplanner.sdk@gmail.com</dd></div>
+      <div class="fact"><dt>Effective</dt><dd>13 October 2026</dd></div>
+      <div class="fact"><dt>Last updated</dt><dd>13 October 2026</dd></div>
+      <div class="fact"><dt>Registered address</dt><dd>6, 2nd Street, VOC Colony, Kodambakkam, Chennai, Tamil Nadu 600024, India</dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="index" aria-label="Sections">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1">Introduction</a></li>
+      <li><a href="#s2">Definitions</a></li>
+      <li><a href="#s3">Scope</a></li>
+      <li><a href="#s4">Information we collect</a></li>
+      <li><a href="#s5">Purpose of processing</a></li>
+      <li><a href="#s6">Legal basis</a></li>
+      <li><a href="#s7">Location data</a></li>
+      <li><a href="#s8">Workplace monitoring</a></li>
+      <li><a href="#s9">Camera, photos and files</a></li>
+      <li><a href="#s10">Push notifications</a></li>
+      <li><a href="#s11">Messaging inside the app</a></li>
+      <li><a href="#s12">Automated document analysis</a></li>
+      <li><a href="#s13">Sharing and disclosure</a></li>
+      <li><a href="#s14">Third-party services</a></li>
+      <li><a href="#s15">Data retention</a></li>
+      <li><a href="#s16">Security safeguards</a></li>
+      <li><a href="#s17">Cross-border transfers</a></li>
+      <li><a href="#s18">Your rights</a></li>
+      <li><a href="#s19">Grievance redressal</a></li>
+      <li><a href="#s20">Withdrawal of consent</a></li>
+      <li><a href="#s21">Deletion and exit</a></li>
+      <li><a href="#s22">Children's privacy</a></li>
+      <li><a href="#s23">Google Play compliance</a></li>
+      <li><a href="#s24">Apple App Store compliance</a></li>
+      <li><a href="#s25">Changes to this policy</a></li>
+      <li><a href="#s26">Contact</a></li>
+    </ol>
+  </nav>
+
+  <main class="doc">
+
+    <div class="note flag">
+      <p class="note-title">Draft for legal review</p>
+      <p>This policy was drafted from the application's actual behaviour — its permissions, stored fields and outbound integrations. Two items still need a decision before publication: the <strong>named Grievance Officer</strong> (section 19), and confirmation of the <strong>cloud hosting region</strong> (section 17). Have it reviewed by counsel before you submit it to an app store.</p>
+    </div>
+
+    <section id="s1">
+      <h2 class="sec">Introduction</h2>
+      <p class="lede">SDK Infinity Technologies ("we", "us", "our", "the Company", or "Data Fiduciary") is committed to protecting the personal data of the employees, managers and administrators ("Users", "Data Principals", or "you") whose information is recorded in the SDK Infinity employee application (the "Application").</p>
+      <p>This Privacy Policy is issued in accordance with the Digital Personal Data Protection Act, 2023 ("DPDP Act"), the Information Technology Act, 2000, the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 ("SPDI Rules"), and other applicable provisions of Indian law governing the processing of personal data.</p>
+      <p>The Application is an <strong>internal enterprise system</strong> used by the Company's own staff to record attendance, client visits, project tasks and time, end-of-day updates, daily stand-ups, minutes of meeting, support tickets, expenses, leave and internal messages. It is not a consumer application, it is not offered to the public, and accounts are provisioned by the Company. There is no public sign-up.</p>
+      <p>By downloading, installing or using the Application, you acknowledge that you have read and understood this Policy. If you do not agree with any provision, you must cease using the Application and notify the Company.</p>
+    </section>
+
+    <section id="s2">
+      <h2 class="sec">Definitions</h2>
+      <p>In addition to the meanings given under the DPDP Act, 2023:</p>
+      <ul>
+        <li><strong>Data Principal</strong> — the individual to whom the personal data relates: an employee, manager or administrator of the Company holding an account in the Application.</li>
+        <li><strong>Data Fiduciary</strong> — SDK Infinity Technologies, which determines the purpose and means of processing. The Company operates the Application for its own staff and hosts it on infrastructure it controls, and therefore acts as its own processor; no separate technology vendor processes this data.</li>
+        <li><strong>Personal Data</strong> — any data about an identifiable individual, including name, contact details, employee record, attendance and location stamps, task and timesheet entries, photographs, messages, device identifiers and usage logs.</li>
+        <li><strong>Sensitive Personal Data or Information (SPDI)</strong> — as defined under the SPDI Rules, 2011, including financial information such as expense and reimbursement particulars.</li>
+        <li><strong>Processing</strong> — any operation performed on personal data, including collection, recording, storage, retrieval, use, disclosure, restriction, erasure or destruction.</li>
+        <li><strong>Role</strong> — the Application assigns each User exactly one of three roles: <strong>Employee</strong>, <strong>Manager</strong> or <strong>Admin</strong>. The role determines which records that User may see and act on.</li>
+      </ul>
+    </section>
+
+    <section id="s3">
+      <h2 class="sec">Scope</h2>
+      <p>This Policy applies to all personal data collected, processed, stored and disclosed through the Application, including:</p>
+      <ul>
+        <li>Account and profile data of staff who sign in to the Application;</li>
+        <li>Attendance punches and the location recorded with them;</li>
+        <li>Client visit records, including stamps, locations, photographs and written reports;</li>
+        <li>Project tasks, running timers, timesheet entries and end-of-day updates;</li>
+        <li>Stand-ups, minutes of meeting, action items and support tickets;</li>
+        <li>Expense claims, receipts, leave requests and calendar entries;</li>
+        <li>Messages sent through the Application's chat;</li>
+        <li>Device push tokens and diagnostic logs.</li>
+      </ul>
+      <p>This Policy does not govern the privacy practices of third-party services linked from the Application. Access is restricted to authorised personnel aged eighteen (18) years or above.</p>
+    </section>
+
+    <section id="s4">
+      <h2 class="sec">Information we collect</h2>
+      <p>The table below is the complete picture, stated plainly. It is the same list that appears in the app store data-safety disclosures.</p>
+      <div class="table-wrap wide">
+        <table>
+          <thead>
+            <tr><th scope="col">Category</th><th scope="col">What is recorded</th><th scope="col">Collected</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Identity &amp; account</td><td>Name, work email, login identifier, employee number, job title, department, reporting manager, assigned role, hashed credentials, session tokens</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Attendance</td><td>Check-in and check-out time, worked hours, overtime, and the punch's location, city, country and IP address</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Precise location</td><td>Latitude and longitude captured at the moment of an attendance punch or a client-visit stamp — see section 7</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Client visits</td><td>Client, project, purpose, in and out stamps with location, written report, photographs, colleagues present</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Work &amp; time</td><td>Tasks, running timers, task sessions, timesheet entries, descriptions, progress, blockers</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Reports</td><td>End-of-day updates, daily stand-ups, action points, minutes of meeting, support tickets</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Financial</td><td>Expense claims, amounts, categories, receipt images, approval decisions</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Leave &amp; calendar</td><td>Time-off requests, types, dates, approval status, meeting invitations and attendance</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Messages</td><td>Direct messages sent through the Application's chat, with sender, recipient and timestamp</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Photos &amp; files</td><td>Images and documents you choose to capture or attach, with file name, upload time and uploader</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Device &amp; diagnostics</td><td>Device model, OS version, push notification token, IP address, app usage and crash logs</td><td><span class="pill yes">Yes</span></td></tr>
+            <tr><td>Background location</td><td>Continuous or background position tracking</td><td><span class="pill no">Never</span></td></tr>
+            <tr><td>Contacts, SMS, call logs</td><td>Address book, messages or call history on the device</td><td><span class="pill no">Never</span></td></tr>
+            <tr><td>Microphone &amp; audio</td><td>Any audio recording</td><td><span class="pill no">Never</span></td></tr>
+            <tr><td>Biometrics</td><td>Fingerprint or facial templates. Device unlock, where used, is performed by the operating system and nothing is transmitted to us</td><td><span class="pill no">Never</span></td></tr>
+            <tr><td>Advertising identifiers</td><td>Ad IDs, tracking pixels, cross-app tracking</td><td><span class="pill no">Never</span></td></tr>
+            <tr><td>Health, religion, politics</td><td>Any such data</td><td><span class="pill no">Never</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>Permissions the Application requests</h3>
+      <div class="table-wrap wide">
+        <table>
+          <thead><tr><th scope="col">Permission</th><th scope="col">Why</th><th scope="col">When</th></tr></thead>
+          <tbody>
+            <tr><td>Location</td><td>To stamp an attendance punch or a client-visit check-in and check-out with where it happened</td><td>Only while the app is open and you tap the button</td></tr>
+            <tr><td>Camera</td><td>To photograph a client-visit report, an expense receipt or a document</td><td>Only when you choose to take a photo</td></tr>
+            <tr><td>Photos &amp; files</td><td>To attach an existing image or document you select</td><td>Only for the files you pick</td></tr>
+            <tr><td>Notifications</td><td>To deliver approvals, assignments, reminders and messages</td><td>On delivery</td></tr>
+            <tr><td>Network</td><td>To reach the Company's server and report connectivity</td><td>Throughout</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The Application requests no permission classed as high-risk beyond those listed above. It does not request background location, contacts, SMS, call log or microphone access.</p>
+    </section>
+
+    <section id="s5">
+      <h2 class="sec">Purpose of processing</h2>
+      <p>Personal data is processed only for the following purposes:</p>
+      <ul>
+        <li><strong>Attendance and payroll input</strong> — recording working hours, overtime and absence, and supplying the figures on which salary and leave entitlement are computed.</li>
+        <li><strong>Client visit evidencing</strong> — establishing that a visit took place, for how long and at whose premises, and holding the written report and photographs that account for it.</li>
+        <li><strong>Project and time management</strong> — allocating tasks, recording effort against them and reporting progress to the people accountable for delivery.</li>
+        <li><strong>Reporting and coordination</strong> — end-of-day updates, stand-ups, minutes and action items that keep a team informed.</li>
+        <li><strong>Expense and leave administration</strong> — submitting, reviewing and approving claims and time-off requests.</li>
+        <li><strong>Internal communication</strong> — direct messages between colleagues.</li>
+        <li><strong>Statutory compliance</strong> — maintaining records required under labour, tax and accounting law, and responding to audits.</li>
+        <li><strong>Security and integrity</strong> — authenticating users, enforcing role-based access, and maintaining an audit trail of changes to attendance and financial records.</li>
+        <li><strong>Support and improvement</strong> — diagnosing faults and improving reliability.</li>
+      </ul>
+      <p>Personal data collected through the Application is <strong>never</strong> used for advertising, never sold, and never shared with any party for commercial gain.</p>
+    </section>
+
+    <section id="s6">
+      <h2 class="sec">Legal basis</h2>
+      <h4>Consent</h4>
+      <p>Staff consent at onboarding and at first sign-in, and again at the operating-system prompt for location, camera and notifications. Consent may be withdrawn as described in section 20.</p>
+      <h4>Employment contract</h4>
+      <p>Processing of attendance, working time, leave and expense data is necessary to perform the employment contract — to pay you correctly, grant leave and reimburse expenditure.</p>
+      <h4>Legal obligation</h4>
+      <p>Attendance and wage records, expense and tax records, and statutory returns are processed to comply with Indian labour, tax and accounting law.</p>
+      <h4>Legitimate interests</h4>
+      <p>Protecting the Company's property and clients, preventing fraudulent claims, maintaining the integrity of financial records and resolving disputes — provided those interests do not override your fundamental rights.</p>
+    </section>
+
+    <section id="s7">
+      <h2 class="sec">Location data</h2>
+      <div class="note">
+        <p class="note-title">Read this one</p>
+        <p>The Application <strong>does</strong> collect precise location. It is the single most sensitive thing it records, so this section states exactly what happens.</p>
+      </div>
+      <h4>When it is captured</h4>
+      <p>Your latitude and longitude are read at four moments, and no others:</p>
+      <ul>
+        <li>when you tap <strong>Check in</strong> on attendance;</li>
+        <li>when you tap <strong>Check out</strong>;</li>
+        <li>when you start a <strong>client visit</strong>;</li>
+        <li>when you close a client visit.</li>
+      </ul>
+      <p>Each capture is a single reading taken in response to your own tap. The reading is stored against that punch or stamp, together with the city, country and IP address derived from the connection.</p>
+      <h4>What is not captured</h4>
+      <p>There is <strong>no background location tracking</strong>. The Application does not run a location service, does not read your position while it is closed or backgrounded, does not follow your route between two points, and does not build a location history beyond the individual stamps listed above. On iOS the permission requested is <em>When In Use</em>, never <em>Always</em>.</p>
+      <h4>If you decline</h4>
+      <p>Location permission may be refused or revoked at any time in device settings. <strong>You can still check in and out.</strong> The punch is recorded without coordinates, and your manager sees that no location was captured. The Company may ask you about an unstamped punch, but the Application will not prevent you from working.</p>
+      <h4>Who can see it</h4>
+      <p>A location stamp is visible to you, to your reporting manager, and to administrators. It is not visible to colleagues at the same level, and it is never disclosed outside the Company except as set out in section 13.</p>
+    </section>
+
+    <section id="s8">
+      <h2 class="sec">Workplace monitoring</h2>
+      <p>This Application records information about how you work, and you are entitled to know precisely what is visible and to whom. The following is recorded and can be reviewed by your reporting manager and by administrators:</p>
+      <ul>
+        <li>when you checked in and out, the hours worked and any overtime;</li>
+        <li>where you were when you punched, when location was available;</li>
+        <li>which tasks you are assigned, which timer is running and how long it has run;</li>
+        <li>the time you booked against each task;</li>
+        <li>your end-of-day updates, including progress and blockers you report;</li>
+        <li>your client visits, their duration and their written reports;</li>
+        <li>your expense claims and leave requests, and the decisions on them.</li>
+      </ul>
+      <p>This data is used to administer work, pay and clients. It is <strong>not</strong> used for covert surveillance, for automated performance scoring, or to make any decision about you by automated means alone. No adverse decision concerning your employment is taken solely on the basis of data produced by the Application without human review.</p>
+      <p>Direct messages sent through the Application's chat are stored on the Company's server and are accessible to administrators where there is a lawful reason — an investigation, a legal claim, or a statutory request. Treat the Application's chat as a work channel, not a private one.</p>
+    </section>
+
+    <section id="s9">
+      <h2 class="sec">Camera, photos and files</h2>
+      <p>The Application asks for camera and photo access only to attach evidence to a record.</p>
+      <h4>Camera</h4>
+      <p>Used to photograph a client-visit observation, an expense receipt, or a document to attach to a project. The camera opens only when you tap a control that takes a photo. The Application never opens the camera in the background and never captures an image without your action.</p>
+      <h4>Photos and files</h4>
+      <p>Used so you can attach a file you select. Only the files you explicitly choose are read and uploaded. The Application does not scan, index or transmit the contents of your photo library or file system.</p>
+      <h4>Metadata</h4>
+      <p>An uploaded file is stored with its name, the time of upload and the identity of the person who uploaded it. That record is the audit trail establishing who added what and when. Geolocation metadata embedded in an image file is not read or used by the Application.</p>
+      <h4>Revoking access</h4>
+      <p>Camera and photo permissions may be revoked at any time in device settings. Existing records remain visible; you will simply be unable to capture or attach anything new from that device.</p>
+    </section>
+
+    <section id="s10">
+      <h2 class="sec">Push notifications</h2>
+      <p>The Application sends push notifications for events that need your attention: a task assigned to you, a leave request awaiting your approval, a decision on your own request, a stand-up or end-of-day reminder, a client-visit update, a meeting invitation, and a new direct message.</p>
+      <h4>How delivery works</h4>
+      <p>Delivery uses <strong>Firebase Cloud Messaging</strong>, a service of Google LLC. When you permit notifications, your device issues a push token which is stored against your account so that a message can be addressed to that device. A separate token is held for each device you sign in on, and each can be revoked individually.</p>
+      <h4>What travels</h4>
+      <p>A notification carries a short title and preview — for example the sender's name and the first line of a message — together with the identifier of the record to open. That content passes through Google's infrastructure in order to reach your device. Do not treat a notification preview as private: it may appear on a lock screen.</p>
+      <h4>Turning them off</h4>
+      <p>Notifications may be disabled in device settings at any time. The in-app notification list continues to work, because it is read from the Company's own server and does not depend on push delivery.</p>
+    </section>
+
+    <section id="s11">
+      <h2 class="sec">Messaging inside the app</h2>
+      <p>The Application includes a direct-message chat between colleagues. Messages are stored on the Company's own server as ordinary internal records, and the same conversation is visible in the web interface, so a message sent from a phone appears in the recipient's desktop client and vice versa.</p>
+      <p>Messages are <strong>not end-to-end encrypted</strong>. They are encrypted in transit and at rest, but the Company holds them and administrators can access them where there is a lawful reason, as stated in section 8. A conversation is visible to its participants; it is not readable by other colleagues through the Application.</p>
+      <p>Message content is never used for advertising, profiling or automated analysis.</p>
+    </section>
+
+    <section id="s12">
+      <h2 class="sec">Automated document analysis</h2>
+      <p>The Application includes an optional feature that reads a project document you upload and proposes a list of tasks from it. You are told which engine will be used before you run an analysis.</p>
+      <h4>Two engines</h4>
+      <ul>
+        <li>A <strong>local reader</strong>, which runs entirely on the Company's own server. No document content leaves the Company's infrastructure.</li>
+        <li>A <strong>large language model</strong> provided by Anthropic PBC, where the Company has configured and enabled it. In that case the <strong>text of the document you uploaded is transmitted to Anthropic</strong> for analysis and a proposed task list is returned.</li>
+      </ul>
+      <p>Where the model is used, document text is sent for the single purpose of producing that proposal. Do not upload a document containing personal data of third parties, client confidential material or anything you are not authorised to disclose, unless the Company has confirmed that the model is permitted for that material.</p>
+      <p>The proposal is a <strong>suggestion only</strong>. No task is created until a person reviews and confirms it, so no decision is made about anyone by automated means.</p>
+      <p>Ask the Grievance Officer which engine is in force on your deployment; the setting is recorded and can be stated on request.</p>
+    </section>
+
+    <section id="s13">
+      <h2 class="sec">Sharing and disclosure</h2>
+      <p>The Company does not sell, rent or trade personal data. Disclosure occurs only as follows.</p>
+      <h4>Inside the Company</h4>
+      <p>Access is governed by role. <strong>Employees</strong> see their own records and those they take part in. <strong>Managers</strong> additionally see the records of their reporting line. <strong>Administrators</strong> see the records of the company they administer. Every request is checked against these rules on the server, so the mobile application can never retrieve a record its user could not open in the web interface.</p>
+      <h4>Clients</h4>
+      <p>Where a client visit or project is performed for a customer, the fact, date, duration and written report of work may be shared with that customer for billing and accountability. Location coordinates and personal identity documents are not shared with a client.</p>
+      <h4>Service providers</h4>
+      <ul>
+        <li>Cloud hosting and infrastructure providers, for storage and hosting;</li>
+        <li>Google LLC, for push notification delivery (section 10);</li>
+        <li>Anthropic PBC, for document analysis where enabled (section 12);</li>
+        <li>Chartered accountants, auditors and payroll advisers, for statutory filings;</li>
+        <li>Legal advisers, in connection with a claim.</li>
+      </ul>
+      <p>All such parties are bound by confidentiality, must apply appropriate security measures, and may process personal data only for the purposes we specify.</p>
+      <h4>Legal and regulatory</h4>
+      <p>Personal data may be disclosed to courts, regulators, tax authorities or law enforcement where required by law, to respond to a statutory audit or investigation, to protect the rights, property or safety of the Company, its staff or third parties, or to establish or defend a legal claim.</p>
+      <h4>Business transfers</h4>
+      <p>On a merger, acquisition or reorganisation, personal data may transfer to the successor entity, which must honour this Policy or give you notice and an opportunity to withdraw consent where the law requires it.</p>
+      <h4>Aggregate data</h4>
+      <p>Aggregated or anonymised data that does not identify any individual — utilisation rates, attendance trends, project profitability — may be used for internal analysis.</p>
+    </section>
+
+    <section id="s14">
+      <h2 class="sec">Third-party services</h2>
+      <div class="table-wrap wide">
+        <table>
+          <thead><tr><th scope="col">Service</th><th scope="col">Purpose</th><th scope="col">What it receives</th></tr></thead>
+          <tbody>
+            <tr><td>Firebase Cloud Messaging<br><span style="font-weight:400;color:var(--muted)">Google LLC</span></td><td>Push notification delivery</td><td>Device push token, notification title and preview, record identifier</td></tr>
+            <tr><td>Anthropic<br><span style="font-weight:400;color:var(--muted)">Anthropic PBC — optional</span></td><td>Document analysis, where enabled by the Company</td><td>The text of the document submitted for analysis</td></tr>
+            <tr><td>Cloud hosting</td><td>Application and database hosting</td><td>All data described in section 4, at rest</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The Application integrates <strong>no advertising network, no tracking pixel and no cross-application tracking technology</strong>. It does not use a payment gateway and never handles card details. Where technical monitoring is used, it is confined to error and crash diagnostics and performance measurement.</p>
+    </section>
+
+    <section id="s15">
+      <h2 class="sec">Data retention</h2>
+      <div class="table-wrap wide">
+        <table>
+          <thead><tr><th scope="col">Record</th><th scope="col">Kept for</th><th scope="col">Why</th></tr></thead>
+          <tbody>
+            <tr><td>Attendance &amp; working time</td><td>Up to 8 years after the relevant financial year</td><td>Labour, wage and tax record-keeping; limitation period for claims</td></tr>
+            <tr><td>Location stamps</td><td>With the punch they belong to, for the same period</td><td>They are part of the record that evidences the punch</td></tr>
+            <tr><td>Client visits &amp; reports</td><td>Duration of the client relationship plus 8 years</td><td>Billing, audit and dispute resolution</td></tr>
+            <tr><td>Timesheets &amp; tasks</td><td>Up to 8 years</td><td>Project accounting and statutory records</td></tr>
+            <tr><td>Expenses &amp; receipts</td><td>Up to 8 years</td><td>Tax and audit requirements</td></tr>
+            <tr><td>Leave records</td><td>Duration of employment plus 8 years</td><td>Entitlement history and statutory obligations</td></tr>
+            <tr><td>Chat messages</td><td>Duration of employment, unless deleted earlier</td><td>Operational continuity and legal claims</td></tr>
+            <tr><td>Push tokens</td><td>Until sign-out, revocation, or 90 days of inactivity</td><td>Tokens expire and are pruned automatically</td></tr>
+            <tr><td>Diagnostic &amp; crash logs</td><td>Up to 1 year</td><td>Troubleshooting and security monitoring</td></tr>
+            <tr><td>Account &amp; audit trail</td><td>Duration of employment plus the period of the underlying record</td><td>The trail is part of the record's integrity</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>On expiry of the applicable period, personal data is securely deleted or anonymised, including from backups and archives, subject to technical feasibility and legal constraint.</p>
+    </section>
+
+    <section id="s16">
+      <h2 class="sec">Security safeguards</h2>
+      <h4>Technical</h4>
+      <ul>
+        <li>Encryption in transit using Transport Layer Security, and encryption at rest;</li>
+        <li>Credentials stored only in hashed form, never in plain text;</li>
+        <li>Signed, expiring access tokens for the mobile application, validated against a server-side record and individually revocable, with a maximum life of ninety (90) days;</li>
+        <li>Every request checked against the signed-in user's own permissions and record-level rules, so the mobile application cannot retrieve what that user could not see in the web interface;</li>
+        <li>Firewalls, network monitoring and periodic vulnerability assessment;</li>
+        <li>Secure development practice, including code review and automated testing.</li>
+      </ul>
+      <h4>Organisational</h4>
+      <ul>
+        <li>Three-tier role-based access, with destructive operations reserved to administrators;</li>
+        <li>Record-level scoping by company, so staff see only the portfolio they work on;</li>
+        <li>An audit trail on attendance and financial records showing who changed what and when;</li>
+        <li>Confidentiality obligations on staff and contractors;</li>
+        <li>Data-protection training and a documented incident response procedure.</li>
+      </ul>
+      <h4>Breach notification</h4>
+      <p>On becoming aware of a personal data breach, the Company will notify affected Data Principals and the Data Protection Board of India in the manner and within the timelines prescribed under the DPDP Act, 2023, and take prompt remedial action.</p>
+      <h4>Limitation</h4>
+      <p>No system is immune to risk. The Company cannot guarantee absolute security of data transmitted over the internet, and you acknowledge the inherent risks of electronic transmission and storage.</p>
+    </section>
+
+    <section id="s17">
+      <h2 class="sec">Cross-border transfers</h2>
+      <p>Personal data is primarily processed and stored in India. Transfers outside India occur in these circumstances:</p>
+      <ul>
+        <li><strong>Push notifications</strong> — notification content passes through Google's global infrastructure to reach your device;</li>
+        <li><strong>Document analysis</strong> — where the language model is enabled, document text is transmitted to Anthropic PBC;</li>
+        <li><strong>Cloud hosting</strong> — where the hosting provider's data centre or support operations sit outside India.</li>
+      </ul>
+      <p>Where personal data is transferred outside India, the Company ensures compliance with applicable law, including any restriction notified by the Central Government under the DPDP Act, 2023, and puts contractual safeguards in place with the recipient.</p>
+    </section>
+
+    <section id="s18">
+      <h2 class="sec">Your rights</h2>
+      <p>Under the DPDP Act, 2023 you may:</p>
+      <ul>
+        <li><strong>Access</strong> — obtain confirmation that your data is processed, a summary of it, and the identities of parties it has been shared with. You may request a copy of your attendance history, timesheets and visit records.</li>
+        <li><strong>Correct and complete</strong> — have inaccurate data corrected and incomplete data completed, such as a wrong contact number or a mis-assigned department.</li>
+        <li><strong>Erase</strong> — request deletion where retention is no longer necessary, subject to the statutory obligations in section 15.</li>
+        <li><strong>Port</strong> — receive your data in a structured, commonly used, machine-readable format, where technically feasible.</li>
+        <li><strong>Seek redress</strong> — raise a grievance with the Grievance Officer and, if unsatisfied, with the Data Protection Board of India.</li>
+        <li><strong>Nominate</strong> — appoint someone to exercise these rights on your behalf in the event of death or incapacity.</li>
+      </ul>
+      <h4>Limits</h4>
+      <p>Rights may be limited where necessary to comply with a legal obligation, protect the rights of others, preserve evidence, or perform a contract. In particular, <strong>attendance and financial records underlying payroll, tax filings and audited accounts cannot be altered or erased on request</strong>, because their integrity is required by law. Each request is assessed individually and answered with reasons.</p>
+    </section>
+
+    <section id="s19">
+      <h2 class="sec">Grievance redressal</h2>
+      <div class="contact">
+        <span class="who">Grievance Officer — SDK Infinity Technologies</span>
+        Name: <strong style="color:var(--flag)">[to be designated before publication]</strong><br>
+        Email: goalsplanner.sdk@gmail.com<br>
+        Address: 6, 2nd Street, VOC Colony, Kodambakkam, Chennai, Tamil Nadu 600024, India
+      </div>
+      <p>A grievance should be submitted in writing and should state your name and contact details, the matter complained of, the period or record concerned, any supporting documents, and how you would like to be answered.</p>
+      <p>We acknowledge a grievance within <strong>forty-eight (48) hours</strong> and aim to resolve it within <strong>thirty (30) calendar days</strong>. Where more time is needed, we will keep you updated. If you remain dissatisfied, you may escalate to the Data Protection Board of India under the DPDP Act, 2023.</p>
+    </section>
+
+    <section id="s20">
+      <h2 class="sec">Withdrawal of consent</h2>
+      <p>You may withdraw consent at any time by writing to the Grievance Officer. Withdrawing consent is as easy as giving it, and no fee is charged.</p>
+      <p>Withdrawal takes effect prospectively and does not affect processing already carried out. Depending on what you withdraw:</p>
+      <ul>
+        <li>revoking <strong>location</strong> means punches are recorded without coordinates — you can still check in and out;</li>
+        <li>revoking <strong>notifications</strong> means you must open the app to see approvals and messages;</li>
+        <li>revoking <strong>camera and files</strong> means you cannot attach new evidence from that device;</li>
+        <li>withdrawing consent to processing that is necessary to your employment contract may mean the Company cannot administer your attendance, pay or leave through the Application, and an alternative arrangement will have to be agreed.</li>
+      </ul>
+      <p>Withdrawal does not require erasure of data the Company must retain by law or needs to defend a legal claim.</p>
+    </section>
+
+    <section id="s21">
+      <h2 class="sec">Deletion and exit</h2>
+      <p>When your employment or engagement ends, or on a request for removal, write to the Grievance Officer. We will:</p>
+      <ul>
+        <li>revoke application access and invalidate every active session and push token;</li>
+        <li>delete device tokens and diagnostic data associated with your devices;</li>
+        <li>delete or anonymise personal data that is not subject to a retention obligation;</li>
+        <li>retain the minimum required for statutory audit, tax, payroll and legal claims — and tell you what has been retained and why.</li>
+      </ul>
+      <p>Account closure and deletion requests may also be made by email at any time, including after you have uninstalled the Application.</p>
+    </section>
+
+    <section id="s22">
+      <h2 class="sec">Children's privacy</h2>
+      <p>The Application is for authorised staff aged eighteen (18) years or above. It is not directed at children, and the Company does not knowingly collect the personal data of a child as defined under the DPDP Act, 2023. No behavioural monitoring of children is carried out and no advertising is directed at anyone.</p>
+      <p>If we become aware that a child's personal data has been collected without the consent the law requires, we will delete it promptly. A parent or guardian may contact the Grievance Officer to request deletion.</p>
+    </section>
+
+    <section id="s23">
+      <h2 class="sec">Google Play compliance</h2>
+      <p>The Application complies with the Google Play User Data Policy.</p>
+      <h4>Sensitive permission justification</h4>
+      <ul>
+        <li><strong>Location (fine and coarse)</strong> — to stamp an attendance punch or client-visit check-in and check-out with where it occurred, for payroll and client accountability. Collected in the foreground only, in response to a user action. Background location is not requested.</li>
+        <li><strong>Camera</strong> — to photograph visit observations, expense receipts and documents, only on a user action.</li>
+        <li><strong>Photos and media</strong> — to attach a file the user selects.</li>
+        <li><strong>Post notifications</strong> — to deliver work notifications.</li>
+        <li><strong>Internet and network state</strong> — to reach the Company's server and report connectivity.</li>
+      </ul>
+      <p>The Application does not request contacts, SMS, call log or microphone permissions, or any other high-risk permission.</p>
+      <h4>Transparency</h4>
+      <p>Data is collected solely to administer the Company's own workforce. It is not used for advertising and is not shared with advertising networks. The Application performs no cross-application tracking and integrates no advertising SDK. Personal data is not sold. The Play Store Data Safety section reflects the disclosures in section 4, and account deletion is available as described in section 21.</p>
+    </section>
+
+    <section id="s24">
+      <h2 class="sec">Apple App Store compliance</h2>
+      <p>The Application complies with the Apple App Store Review Guidelines.</p>
+      <h4>Data linked to you</h4>
+      <ul>
+        <li>Contact information — name, work email;</li>
+        <li>Identifiers — account identifier, device push token;</li>
+        <li>Location — precise location, captured at a punch or stamp only;</li>
+        <li>User content — photographs, documents, reports, messages;</li>
+        <li>Financial information — expense claims and reimbursements;</li>
+        <li>Usage data and diagnostics — interaction logs, crash reports.</li>
+      </ul>
+      <h4>Not collected</h4>
+      <p>Contacts, browsing history, search history, health data, and advertising identifiers are not collected.</p>
+      <h4>No tracking</h4>
+      <p>Data is not used to track you across apps or websites owned by other companies. The Application does not use the App Tracking Transparency framework because it performs no tracking, and does not link your data to third-party data for advertising.</p>
+      <h4>Permission requests</h4>
+      <p>Location is requested as <em>When In Use</em>, never <em>Always</em>. Camera and photo access are requested only at the point of a user-initiated action, each with a contextual purpose string explaining why.</p>
+      <h4>Enterprise distribution</h4>
+      <p>The Application is an internal business tool. Accounts are provisioned by the Company; there is no public sign-up and no third-party or social sign-in. Account deletion is handled as described in section 21.</p>
+    </section>
+
+    <section id="s25">
+      <h2 class="sec">Changes to this policy</h2>
+      <p>We may update this Policy to reflect changes in law, practice or technology. Material changes will be communicated by in-app notice, by email to your work address, or by publication at the address where this Policy is hosted. The "Last updated" date at the top records the most recent revision.</p>
+      <p>Continued use of the Application after a change is published constitutes acceptance of the revised Policy. Where the law requires it, we will obtain fresh consent before expanding the scope of processing or introducing a new purpose. Earlier versions are archived and available on request.</p>
+    </section>
+
+    <section id="s26">
+      <h2 class="sec">Contact</h2>
+      <div class="contact">
+        <span class="who">SDK Infinity Technologies</span>
+        6, 2nd Street, VOC Colony, Kodambakkam<br>
+        Chennai, Tamil Nadu 600024, India<br>
+        Email: goalsplanner.sdk@gmail.com
+      </div>
+      <p>We acknowledge enquiries within forty-eight (48) hours and aim to respond substantively within thirty (30) calendar days, with interim updates where a matter takes longer.</p>
+      <h4>Acknowledgment</h4>
+      <p>By installing or using the Application you acknowledge that you have read and understood this Privacy Policy, and that you have been informed of your rights under applicable data protection law and how to exercise them.</p>
+      <h4>Governing law</h4>
+      <p>This Policy is governed by the laws of India. Disputes arising out of it or out of the processing of personal data are subject to the exclusive jurisdiction of the courts at Chennai, Tamil Nadu.</p>
+      <h4>Severability</h4>
+      <p>If any provision is held invalid or unenforceable, it shall be severed and the remaining provisions shall remain in full force.</p>
+    </section>
+
+    <footer class="colophon">
+      <p>SDK Infinity Technologies · Privacy Policy · Version 1.0 · Effective 13 October 2026</p>
+      <p>Prepared from the application's actual permissions, stored fields and outbound integrations. Review by legal counsel is recommended before this policy is relied upon or submitted to an app store.</p>
+    </footer>
+
+  </main>
+</div>
+</body>
+</html>
